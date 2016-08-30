@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Milind Tambe</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="css/w3.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href=
+    "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
+    rel="stylesheet">
+    <link href="images/MilindTambe.jpg" rel="shortcut icon">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+    body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+    background-image: url('images/header-image7.jpg');
+    min-height: 100%;
+    margin-top: 50px;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+    background-image: url("images/header-image3.jpeg");
+    min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+    background-image: url("images/AI4good.jpg");
+    min-height: 400px;
+    }
+    .bgimg-4 {
+    background-image: url("images/SocialGoodImpact.png");
+    min-height: 400px;
+    }
+
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+
+    #googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
+    }
+
+    /* Turn off parallax scrolling for tablets and mobiles */
+    @media only screen and (max-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: scroll;
+    }
+    }
+    </style>
+</head>
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-center" >
+        <ul class="w3-navbar" id="myNavbar">
+            <li style="margin-left:0px;">
+                <a class="w3-padding-large w3-hover-red" href="#home">HOME</a>
+            </li>
+            <li>
+                <a class="w3-padding-large w3-hover-red" href=
+                "#about">ABOUT</a>
+            </li>
+              <li>
+                <a class="w3-padding-large w3-hover-red" href=
+                "http://teamcore.usc.edu/Research.htm" target="_blank">RESEARCH</a>
+            </li>
+             <li>
+                <a class="w3-padding-large w3-hover-red" href=
+                "http://teamcore.usc.edu/peoplepage.html" target="_blank">PEOPLE</a>
+            </li>
+            <li>
+                <a class="w3-padding-large w3-hover-red" href="http://teamcore.usc.edu/news-content.htm" target="_blank">NEWS</a>
+            </li>
+             <li>
+                <a class="w3-padding-large w3-hover-red" href="http://teamcore.usc.edu/Publications.aspx" target="_blank">PUBLICATIONS</a>
+            </li>
+             <li>
+                <a class="w3-padding-large w3-hover-red" href=
+                "http://teamcore.usc.edu/awards.htm" target="_blank">AWARDS</a>
+            </li>
+            <li>
+                <a class="w3-padding-large w3-hover-red" href=
+                "#short-bio">SHORT-BIO</a>
+            </li>
+              <li>
+                <a class="w3-padding-large w3-hover-red" href=
+                "http://teamcore.usc.edu/courses.htm" target="_blank">TEACHING</a>
+            </li>
+             <li>
+                <a class="w3-padding-large w3-hover-red" href=
+                "http://teamcore.usc.edu/social.htm" target="_blank">EVENTS</a>
+            </li>
+            <li>
+                <a class="w3-padding-large w3-hover-red" href=
+                "http://teamcore.usc.edu/" target="_blank">TEAMCORE</a>
+            </li>
+          
+        </ul>
+    </div><!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-opacity w3-display-container" id="home">
+        <div class="w3-col m12 w3-center w3-section ">
+            <!--<div><img alt="Photo of Me" class="w3-circle-banner" src=
+            "images/MilindTambe.jpg"></div>-->
+            <div class=" banner-text-margin">
+                <div class="banneroverlay">
+                    Milind Tambe
+                </div><br>
+                <div class="banneroverlay">
+                    Helen N. and Emmett H. Jones Professor in Engineering
+                </div><br>
+                <div class="banneroverlay">
+                    Professor, Computer Science &amp; Industrial and Systems
+                    Engineering Departments
+                </div><br>
+                <div class="banneroverlay">
+                    Director, <a href="http://teamcore.usc.edu/">Teamcore Research Group on Artificial
+                    Intelligence and Multiagent Systems</a>
+                </div><br>
+                <div class="banneroverlay">
+                    University of Southern California
+                </div><br>
+                <div class="banneroverlay">
+                    Co-Founder and Director of Research, <a href="http://www.armorway.com/">ARMORWAY Inc.</a>
+                </div><br>
+                <div class="banneroverlay">
+                    <a href="http://teamcore.usc.edu/tambe/CV.pdf" target="_blank">Curriculum vitae [pdf]</a>
+                </div>
+            </div>
+           <!-- <div class="top-medium">
+                <a href="#about"><img alt="Dowm Image" src=
+                "images/down.png"></a>
+            </div>-->
+            <!--<div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">
+        <span class="w3-hide-small">Helen N. and Emmett H. Jones Professor in Engineering</span> <hr>
+         <span class="w3-hide-small">Professor, Computer Science &amp; Industrial and Systems Engineering Departments</span> <hr>
+         <span class="w3-hide-small">Director, Teamcore Research Group on Artificial Intelligence and Multiagent Systems</span> <hr>
+         <span class="w3-hide-small">University of Southern California</span> <hr>
+         <span class="w3-hide-small">Co-Founder and Director of Research, ARMORWAY Inc</span> 
+      </span>
+  </div>-->
+        </div>
+    </div><!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about" style=
+    "text-align:justify; text-justify:inter-word;">
+        <h3 class="w3-center">ABOUT ME</h3>
+        <p class="w3-center"><em>BRIEF INTRODUCTION</em></p>
+        <p>Milind Tambe is Helen N. and Emmett H. Jones Professor in
+        Engineering at the University of Southern California(USC), and
+        Professor in the Computer Science and Industrial and Systems
+        Engineering Departments. He is a fellow of AAAI (Association for
+        Advancement of Artificial Intelligence) (2007), fellow of ACM
+        (Association for Computing Machinery) (2013), recipient of the ACM
+        Autonomous Agents Research Award (2005), Christopher Columbus
+        Fellowship Foundation Homeland security award(2010), the INFORMS Wagner
+        prize for excellence in Operations Research practice (2012), the Rist
+        Prize of the Military Operations Research Society (2011), IBM Faculty
+        Award(2012), Okawa foundation faculty research award (2004), the
+        RoboCup scientific challenge award(1999), Orange County Engineering
+        Council Outstanding Project Achievement Award (2015), USC Associates
+        Award for Creativity in Research (2014) and USC Viterbi School of
+        Engineering use-inspired research award (2009).</p>
+        <p>Prof. Tambe has contributed several foundational papers in agents
+        and multiagent systems and computational game theory; three main areas
+        are MULTIAGENT TEAMWORK, DISTRIBUTED CONSTRAINT OPTIMIZATION (DCOP) and
+        SECURITY GAMES. For this research, he has received the influential
+        paper award and best paper awards at a number of premier Artificial
+        Intelligence Conferences and workshops --- these have included
+        International Joint Conference on AI (IJCAI), International Conference
+        on Autonomous Agents and Multiagent Systems (AAMAS) and International
+        Conference on Intelligent Virtual Agents (IVA) (e.g., recent best paper
+        awards include AAMAS'2016, IAAI'2016, IJCAI'15, AAMAS'12, AAMAS'11,
+        IVA'11, AAMAS'09). Furthermore, today, the security games framework
+        that Prof. Tambe pioneered has been deployed and tested for security
+        optimization, both nationally and internationally, by agencies such as
+        the US Coast Guard and the Federal Air Marshals Service, by various
+        police departments in Los Angeles, as well as by non-governmental
+        organizations committed to wildlife conservation. This research has led
+        him and his students to receive the US Coast Guard Meritorious Team
+        Commendation from the Commandant(2013), US Coast Guard First District's
+        Operational Excellence Award(2011), Certificate of Appreciation from
+        the US Federal Air Marshals Service (2011) and special commendation
+        given by the Los Angeles World Airports police from the city of Los
+        Angeles(2009). Finally, his work with algorithms for exploiting social
+        networks for HIV prevention were listed by Mashable.com in their "26
+        incredible innovations that improved the world in 2015".</p>
+        <p>In 2013, based on his research on security games, Prof. Tambe and
+        team co-founded ARMORWAY Inc., a company focused on security resource
+        optimization. He serves as a member of the board of directors and as
+        director of research at ARMORWAY. Security games was also the focus of
+        the MURI grant where Prof. Tambe served as the PI from 2011-2016.</p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-section"><img alt="Photo of Me"
+            class="w3-circle" src="images/MilindTambe.jpg"></div>
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-section">
+                <p>For his teaching and service, Prof. Tambe has received the
+                USC Steven B. Sample Teaching and Mentoring award (2010) and
+                the ACM recognition of service award (2004). His service
+                includes National Academy of Sciences panels, blue ribbon panel
+                to review security at LAX airport and DARPA ISAT Panels. He has
+                also served as general co-chair for AAMAS (2004), and as a
+                member of the board of directors of IFAAMAS, the IJCAI
+                executive committee, the board of trustees of RoboCup Robot
+                Soccer World Cup Federation and the steering board of the
+                Conference on Decision and Game Theory for Security (GameSec);
+                he also served as associate editor, advisory board member and
+                editorial board member of journals including the Journal of AI
+                Research (JAIR), IEEE Intelligent Systems and the Journal of
+                Autonomous Agents and Multiagent Systems (JAAMAS). Prof. Tambe
+                received his Ph.D. from the School of Computer Science at
+                Carnegie Mellon University.</p>
+            </div>
+        </div>
+    </div><!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container">
+        <div class="w3-display-middle">
+            <!-- <span class="w3-xxlarge w3-text-light-grey w3-wide">Current Research Projects</span>-->
+        </div>
+    </div><!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" style=
+    "text-align:justify; text-justify:inter-word;">
+        <!--<h3 class="w3-center">On Going Projects</h3>-->
+        <p class="w3-center"><em>The Teamcore group's roots are in Artificial Intelligence (AI). Our research in the past decade and longer has focused on "AI for social good", covering topics such as but not limited to: (i) AI for protection of forests, fish and wildlife; (ii) AI for public safety and security; (iii) AI for assisting low-resource sections of society. We focus on fundamental research problems in computational game theory, machine learning, automated planning, intelligent agents and multiagent interactions that are driven by these topics, ensuring a virtuous cycle of research and real-world applications.
+            
+            </em></p><br>
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m6"><a href="http://teamcore.usc.edu/people/Paws/index.html"><img class="w3-hover-opacity"  src="images/pawsimage.png" style="width:100%"></a></div>
+            <div class="w3-col m6"><a href="http://teamcore.usc.edu/projects/security/"><img class="w3-hover-opacity"  src="images/PortSecurity.JPG" style="width:100%"></a></div>
+            <div class="w3-col m6"><a href="http://teamcore.usc.edu/projects/TRUSTS/default.html"><img class="w3-hover-opacity" src="images/LAMetro.jpeg" style=
+                                                                                                       "width:100%"></a></div>
+            <div class="w3-col m6"><a href="http://teamcore.usc.edu/people/SocialGood/index.html"><img class="w3-hover-opacity"  src="images/socialgood.png" style=
+            "width:100%"></a></div>
+        </div><!-- <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="images/fisheries.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/gametheory.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/protectproject.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/teamformation.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>-->
+    </div><!-- Modal for full size images on click-->
+    <div class="w3-modal w3-black" id="modal01" onclick=
+    "this.style.display='none'">
+        <span class=
+        "w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">
+        &times;</span>
+        <div class=
+        "w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" style="max-width:100%"></div>
+    </div><!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container">
+        <div class="w3-display-middle">
+            <!--<span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</span>-->
+        </div>
+    </div>
+    <div class="w3-content w3-container w3-padding-64" id="news">
+        <h5 class="w3-center">Success Stories</h5>
+        <ul class="">
+            <li style="list-style: none"><br></li>
+            <li>
+                <i>Postdoctoral positions (Summer/Fall 2016):</i> <a href=
+                "http://teamcore.usc.edu/tambe/postdoc.html">Postdoctoral
+                Position in Computational game theory/Multiagent systems</a>
+            </li>
+            <li>
+                <i>ELSEVIER, 2016:</i> <a href=
+                "https://www.elsevier.com/connect/using-ai-and-game-theory-to-outwit-poachers"
+                target="_blank">AI springs into action in surprising places</a>
+            </li>
+            <li>
+                <i>FastCoexist.Com, 2016:</i> <a href=
+                "http://www.fastcoexist.com/3061241/future-of-philanthropy/putting-artificial-intelligence-on-the-hunt-for-poachers"
+                target="_blank">Putting Artificial Intelligence On The Hunt For
+                Poachers</a>
+            </li>
+            <li>
+                <i>National Geographic, 2016:</i><a href=
+                "http://news.nationalgeographic.com/2016/06/paws-artificial-intelligence-fights-poaching-ranger-patrols-wildlife-conservation/"
+                target="_blank">Rangers Use Artificial Intelligence to Fight
+                Poachers</a>
+            </li>
+            <li>
+                <i>Los Angeles Times, 2016:</i><a href=
+                "http://www.latimes.com/world/africa/la-fg-global-artificial-intelligence-snap-story.html"
+                target="_blank">More than boots and bullets: This app could
+                help turn the tide on poaching</a>
+            </li>
+            <li>
+                <i>USC News, 2016:</i><a href=
+                "http://news.usc.edu/101501/artificial-intelligence-could-turn-poachers-into-prey/"
+                target="_blank">Artificial intelligence could turn poachers
+                into prey</a>
+            </li>
+            <li>
+                <i>Government Computer News, 2016:</i><a href=
+                "https://gcn.com/blogs/emerging-tech/2016/06/game-theory-homeland-security.aspx"
+                target="_blank">Advanced game theory goes to work for homeland
+                security</a>
+            </li>
+            <li>
+                <i>PR Newswire, 2016:</i><a href=
+                "http://www.prnewswire.com/news-releases/armorway-announces-25-million-in-seed-round-funding-for-pioneering-artificial-and-prescriptive-intelligence-enterprise-initiatives-300280756.html"
+                target="_blank">Armorway Announces $2.5 Million in Seed Round
+                Funding for Pioneering Artificial and Prescriptive Intelligence
+                Enterprise Initiatives</a>
+            </li>
+            <li>
+                <i>National Defense Magazine, 2016:</i><a href=
+                "http://www.nationaldefensemagazine.org/archive/2016/June/Pages/CompanyUsingArtificialIntelligencetoImproveSecurity.aspx"
+                target="_blank">Company Using Artificial Intelligence to
+                Improve Security</a>
+            </li>
+            <li>
+                <i>Christian Science Monitor, 2016:</i><a href=
+                "http://www.csmonitor.com/Environment/2016/0424/To-catch-wildlife-poachers-computer-scientists-turn-to-AI"
+                target="_blank">To catch wildlife poachers, computer scientists
+                turn to AI</a>
+            </li>
+            <li style="list-style: none">
+                <a href="http://teamcore.usc.edu/news-content.htm">More
+                news</a>
+            </li>
+        </ul><!-- VIdeos To the Previous Pointer -->
+        <hr>
+        <h5 class="w3-center">Featured Videos</h5>
+        <div class="">
+            <p align="justify" style="margin-left: 15px; margin-right: 15px">
+            </p>
+            <p align="justify"><span>An 8 minute talk at "AI for social good"
+            workshop organized at the behest of the White House Office of
+            Science and Technology</span></p>
+        </div>
+        <div style="text-align:center;">
+            <a href="https://www.youtube.com/watch?v=61yHC5c2c-E"><img height=
+            "200px;" src="images/AI4good.jpg" width="50%"></a>
+        </div><br>
+        <div class="">
+            <p align="justify" style="margin-left: 15px; margin-right: 15px">
+            </p>
+            <p align="justify"><span>Short PAWS Protection Assistant for
+            Wildlife Security Video; Winner Best AI Application Video
+            AAAI'2016</span></p>
+        </div>
+        <div style="text-align:center;">
+            <a href="https://www.youtube.com/watch?v=ai6yhbx5iGw"><img height=
+            "200px;" src="images/PAWS.jpg" width="50%"></a>
+        </div>
+    </div><!-- Fourth Parallax Image with Portfolio Text -->
+    <div class="bgimg-4 w3-display-container">
+        <div class="w3-display-middle">
+            <!--<span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</span>-->
+        </div>
+    </div><!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+        <h5 class="w3-center">SHORT BIO FOR LECTURES</h5><br>
+        <div id="short-bio" style=
+        "text-align:justify; text-justify:inter-word;">
+            Milind Tambe is Helen N. and Emmett H. Jones Professor in
+            Engineering at the University of Southern California(USC). He is a
+            fellow of AAAI and ACM, as well as recipient of the ACM/SIGART
+            Autonomous Agents Research Award, Christopher Columbus Fellowship
+            Foundation Homeland security award, INFORMS Wagner prize for
+            excellence in Operations Research practice, Rist Prize of the
+            Military Operations Research Society, IBM Faculty Award, Okawa
+            foundation faculty research award, RoboCup scientific challenge
+            award, and other local awards such as the Orange County Engineering
+            Council Outstanding Project Achievement Award, USC Associates award
+            for creativity in research and USC Viterbi use-inspired research
+            award. Prof. Tambe has contributed several foundational papers in
+            AI in areas such as multiagent teamwork, distributed constraint
+            optimization (DCOP) and security games. For this research, he has
+            received the "influential paper award" and a number of best paper
+            awards at conferences such as AAMAS, IJCAI, IAAI and IVA. In
+            addition, Prof. Tambe pioneering real-world deployments of
+            ''security games'' has led him and his team to receive the US Coast
+            Guard Meritorious Team Commendation from the Commandant, US Coast
+            Guard First District's Operational Excellence Award, Certificate of
+            Appreciation from the US Federal Air Marshals Service and special
+            commendation given by LA Airport police from the city of Los
+            Angeles. For his teaching and service, Prof. Tambe has received the
+            USC Steven B. Sample Teaching and Mentoring award and the ACM
+            recognition of service award. He has also co-founded a company
+            based on his research, ARMORWAY, where he serves as the director of
+            research. Prof. Tambe received his Ph.D. from the School of
+            Computer Science at Carnegie Mellon University.
+        </div>
+        <!-- <div class="w3-center"> Helen N. and Emmett H. Jones Professor in Engineering </div>
+    <div class="w3-center"> Professor, Computer Science &amp; Industrial and Systems Engineering Departments</div>
+    <div class="w3-center"> Director, Teamcore Research Group on Artificial Intelligence and Multiagent Systems </div>
+    <div class="w3-center"> University of Southern California</div>
+  <p class="w3-center"><em> Co-Founder and Director of Research, ARMORWAY Inc.</em></p>-->
+        <br>
+        <br>
+        <h5 class="w3-center">Contact Information</h5>
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m12 w3-container w3-section">
+                <div class="w3-large w3-margin-bottom w3-center">
+                    <i class="fa fa-map-marker w3-hover-text-black" style=
+                    "width:30px"></i> 941 Bloom Walk, SAL 300, Los Angeles, CA
+                    90089, US<br>
+                    <i class="fa fa-phone w3-hover-text-black" style=
+                    "width:30px"></i> Phone: (213)740-6447<br>
+                    <i class="fa fa-envelope w3-hover-text-black" style=
+                    "width:30px"></i> Email: tambe @usc.edu<br>
+                </div>
+                <div class="w3-center">
+                    Leave a Note?
+                </div><br>
+                <hr>
+                <br>
+                <div class="w3-row-padding w3-center" style=
+                "margin:0 -16px 8px -16px">
+                    <div class="w3-half">
+                        <input class="w3-input w3-border w3-hover-light-grey"
+                        placeholder="Name" type="text">
+                    </div>
+                    <div class="w3-half">
+                        <input class="w3-input w3-border w3-hover-light-grey"
+                        placeholder="Email" type="text">
+                    </div>
+                </div><input class="w3-input w3-border w3-hover-light-grey"
+                placeholder="Comment" type="text"> <button class=
+                "w3-btn w3-section w3-right">SEND</button>
+            </div>
+        </div>
+    </div><!-- Footer
+<footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">
+ <p></p>
+</footer>-->
+    <!-- Add Google Maps -->
+    <script src="http://maps.googleapis.com/maps/api/js">
+    </script> 
+    <script>
+    var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+    function initialize() {
+    var mapProp = {
+    center:myCenter,
+    zoom:12,
+    scrollwheel:false,
+    draggable:false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+    var marker = new google.maps.Marker({
+    position:myCenter,
+    });
+
+    marker.setMap(map);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+    // Modal Image Gallery
+    function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+    }
+    </script>
+</body>
+</html>
