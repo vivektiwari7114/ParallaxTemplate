@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Implemented Parallax Template Design for Prof. Milind tambe -->
     <title>Milind Tambe</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="css/w3.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href=
-    "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
-    rel="stylesheet">
-    <link href="images/MilindTambe.jpg" rel="shortcut icon">
+    
+    
     <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
     body, html {
@@ -20,7 +15,7 @@
 
     /* Create a Parallax Effect */
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-    opacity: 0.9;
+    opacity: 1;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,8 +24,8 @@
 
     /* First image (Logo. Full height) */
     .bgimg-1 {
-    background-image: url('images/header-image7.jpg');
-    min-height: 100%;
+    background-image: url('images/AI4good.png');
+    min-height: 75%;
     margin-top: 50px;
     }
 
@@ -42,11 +37,13 @@
 
     /* Third image (Contact) */
     .bgimg-3 {
-    background-image: url("images/AI4good.jpg");
+    background-image: url("images/featureNews.jpg");
     min-height: 400px;
     }
     .bgimg-4 {
-    background-image: url("images/SocialGoodImpact.png");min-height: 400px; }
+    background-image: url("images/SocialGoodImpact.png");
+    min-height: 400px;
+    }
 
     .w3-wide {letter-spacing: 10px;}
     .w3-hover-opacity {cursor: pointer;}
@@ -67,9 +64,80 @@
     </style>
 </head>
 <body>
+     <noscript id="deferred-download">
+    <link async href="css/w3.css" rel="stylesheet">
+    <link async href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link async href=
+    "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
+    rel="stylesheet">
+    <link href="images/MilindTambe.jpg" rel="shortcut icon">
+    </noscript>
+    
+      <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-download");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+    
+    
     <!-- Navbar (sit on top) -->
     <div class="w3-top w3-center" >
-        <ul class="w3-navbar" id="myNavbar">
+        <ul class="topnav" id="myTopnav">
+               <li style="margin-left:0px;">
+                <a class="w3-padding-large w3-hover-red" href="#home">HOME</a>
+            </li>
+            <li>
+                <a class="w3-padding-large w3-hover-red" href=
+                "#about">ABOUT</a>
+            </li>
+              <li>
+                <a class="w3-padding-large w3-hover-red" href=
+                "http://teamcore.usc.edu/Research.htm" >RESEARCH</a>
+            </li>
+             <li>
+                <a class="w3-padding-large w3-hover-red" href=
+                "http://teamcore.usc.edu/peoplepage.html" >PEOPLE</a>
+            </li>
+            <li>
+                <a class="w3-padding-large w3-hover-red" href="http://teamcore.usc.edu/news-content.htm" >NEWS</a>
+            </li>
+             <li>
+                <a class="w3-padding-large w3-hover-red" href="http://teamcore.usc.edu/Publications.aspx" >PUBLICATIONS</a>
+            </li>
+             <li>
+                <a class="w3-padding-large w3-hover-red" href=
+                "http://teamcore.usc.edu/awards.htm" >AWARDS</a>
+            </li>
+            <li>
+                <a class="w3-padding-large w3-hover-red" href=
+                "#short-bio">SHORT-BIO</a>
+            </li>
+              <li>
+                <a class="w3-padding-large w3-hover-red" href=
+                "http://teamcore.usc.edu/courses.htm" >TEACHING</a>
+            </li>
+             <li>
+                <a class="w3-padding-large w3-hover-red" href=
+                "http://teamcore.usc.edu/social.htm" >EVENTS</a>
+            </li>
+            <li>
+                <a class="w3-padding-large w3-hover-red" href=
+                "http://teamcore.usc.edu/" >TEAMCORE</a>
+            </li>
+                <li class="icon">
+                <a href="javascript:void(0);" style="font-size:24px;" class="w3-padding-large w3-hover-red" onclick="myFunction()">
+                    &#x2261;</a>
+                </li>
+</ul>
+      <!--  <ul class="w3-navbar" id="myNavbar">
             <li style="margin-left:0px;">
                 <a class="w3-padding-large w3-hover-red" href="#home">HOME</a>
             </li>
@@ -79,21 +147,21 @@
             </li>
               <li>
                 <a class="w3-padding-large w3-hover-red" href=
-                "http://teamcore.usc.edu/Research.htm" target="_blank">RESEARCH</a>
+                "http://teamcore.usc.edu/Research.htm" >RESEARCH</a>
             </li>
              <li>
                 <a class="w3-padding-large w3-hover-red" href=
-                "http://teamcore.usc.edu/peoplepage.html" target="_blank">PEOPLE</a>
+                "http://teamcore.usc.edu/peoplepage.html" >PEOPLE</a>
             </li>
             <li>
-                <a class="w3-padding-large w3-hover-red" href="http://teamcore.usc.edu/news-content.htm" target="_blank">NEWS</a>
+                <a class="w3-padding-large w3-hover-red" href="http://teamcore.usc.edu/news-content.htm" >NEWS</a>
             </li>
              <li>
-                <a class="w3-padding-large w3-hover-red" href="http://teamcore.usc.edu/Publications.aspx" target="_blank">PUBLICATIONS</a>
+                <a class="w3-padding-large w3-hover-red" href="http://teamcore.usc.edu/Publications.aspx" >PUBLICATIONS</a>
             </li>
              <li>
                 <a class="w3-padding-large w3-hover-red" href=
-                "http://teamcore.usc.edu/awards.htm" target="_blank">AWARDS</a>
+                "http://teamcore.usc.edu/awards.htm" >AWARDS</a>
             </li>
             <li>
                 <a class="w3-padding-large w3-hover-red" href=
@@ -101,26 +169,29 @@
             </li>
               <li>
                 <a class="w3-padding-large w3-hover-red" href=
-                "http://teamcore.usc.edu/courses.htm" target="_blank">TEACHING</a>
+                "http://teamcore.usc.edu/courses.htm" >TEACHING</a>
             </li>
              <li>
                 <a class="w3-padding-large w3-hover-red" href=
-                "http://teamcore.usc.edu/social.htm" target="_blank">EVENTS</a>
+                "http://teamcore.usc.edu/social.htm" >EVENTS</a>
             </li>
             <li>
                 <a class="w3-padding-large w3-hover-red" href=
-                "http://teamcore.usc.edu/" target="_blank">TEAMCORE</a>
+                "http://teamcore.usc.edu/" >TEAMCORE</a>
             </li>
           
-        </ul>
+        </ul>-->
     </div><!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-opacity w3-display-container" id="home">
         <div class="w3-col m12 w3-center w3-section ">
             <!--<div><img alt="Photo of Me" class="w3-circle-banner" src=
             "images/MilindTambe.jpg"></div>-->
-            <div class=" banner-text-margin">
+           <!-- <div class=" banner-text-margin">
                 <div class="banneroverlay">
                     Milind Tambe
+                </div><br>
+                <div class="banneroverlay">
+                    Co-director, <a href="https://news.usc.edu/106565/artificial-intelligence-for-a-better-tomorrow/">CAISS Center on AI for Social Solutions</a>
                 </div><br>
                 <div class="banneroverlay">
                     Helen N. and Emmett H. Jones Professor in Engineering
@@ -136,24 +207,26 @@
                 <div class="banneroverlay">
                     University of Southern California
                 </div><br>
+                <br>
                 <div class="banneroverlay">
-                    Co-Founder and Director of Research, <a href="http://www.armorway.com/">ARMORWAY Inc.</a>
+                    Co-Founder and Director of Research, <a href="http://www.avataai.com/">Avata Intelligence.</a>
                 </div><br>
                 <div class="banneroverlay">
                     <a href="http://teamcore.usc.edu/tambe/CV.pdf" target="_blank">Curriculum vitae [pdf]</a>
                 </div>
-            </div>
+            </div>-->
            <!-- <div class="top-medium">
                 <a href="#about"><img alt="Dowm Image" src=
                 "images/down.png"></a>
             </div>-->
             <!--<div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">
+        <span class="w3-hide-small">Co-Director, CAISS Center on AI For Social Solutions</span> <hr>
         <span class="w3-hide-small">Helen N. and Emmett H. Jones Professor in Engineering</span> <hr>
          <span class="w3-hide-small">Professor, Computer Science &amp; Industrial and Systems Engineering Departments</span> <hr>
          <span class="w3-hide-small">Director, Teamcore Research Group on Artificial Intelligence and Multiagent Systems</span> <hr>
          <span class="w3-hide-small">University of Southern California</span> <hr>
-         <span class="w3-hide-small">Co-Founder and Director of Research, ARMORWAY Inc</span> 
+         <span class="w3-hide-small">Co-Founder and Director of Research, Avata Intelligence</span> 
       </span>
   </div>-->
         </div>
@@ -162,7 +235,8 @@
     "text-align:justify; text-justify:inter-word;">
         <h3 class="w3-center">ABOUT ME</h3>
         <p class="w3-center"><em>BRIEF INTRODUCTION</em></p>
-        <p>Milind Tambe is Helen N. and Emmett H. Jones Professor in
+        <p>Milind Tambe is Co-Founder and Co-Director of the CAISS Center on AI for Social Solutions,
+        Helen N. and Emmett H. Jones Professor in
         Engineering at the University of Southern California(USC), and
         Professor in the Computer Science and Industrial and Systems
         Engineering Departments. He is a fellow of AAAI (Association for
@@ -202,10 +276,8 @@
         networks for HIV prevention were listed by Mashable.com in their "26
         incredible innovations that improved the world in 2015".</p>
         <p>In 2013, based on his research on security games, Prof. Tambe and
-        team co-founded ARMORWAY Inc., a company focused on security resource
-        optimization. He serves as a member of the board of directors and as
-        director of research at ARMORWAY. 
-        Security games was also the focus of
+        team co-founded Avata Intelligence. He serves as a member of the board of directors and as
+        director of research at Avata Intelligence. Avata Intelligence grew in part from 
         the MURI grant where Prof. Tambe served as the PI from 2011-2016.</p>
         <div class="w3-row">
             <div class="w3-col m6 w3-center w3-section"><img alt="Photo of Me"
@@ -250,7 +322,23 @@
                                                                                                        "width:100%"></a></div>
             <div class="w3-col m6"><a href="http://teamcore.usc.edu/people/SocialGood/index.html"><img class="w3-hover-opacity"  src="images/socialgood.png" style=
             "width:100%"></a></div>
-        </div><
+        </div><!-- <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="images/fisheries.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/gametheory.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/protectproject.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/teamformation.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>-->
     </div><!-- Modal for full size images on click-->
     <div class="w3-modal w3-black" id="modal01" onclick=
     "this.style.display='none'">
@@ -270,10 +358,20 @@
         <h5 class="w3-center">Success Stories</h5>
         <ul class="">
             <li style="list-style: none"><br></li>
-            <li>
+            <!-------------- <li>
                 <i>Postdoctoral positions (Summer/Fall 2016):</i> <a href=
                 "http://teamcore.usc.edu/tambe/postdoc.html">Postdoctoral
                 Position in Computational game theory/Multiagent systems</a>
+            </li> ------------->
+             <li>
+                <i>LA TIMES, 2016:</i> <a href=
+                "http://www.latimes.com/science/sciencenow/la-sci-sn-usc-ai-social-good-20160831-snap-story.html"
+                target="_blank">Could Artificial Intelligence Help Humanity: Two California Universities Think So</a>
+            </li>
+            <li>
+                <i>USC News, 2016:</i> <a href=
+                "https://news.usc.edu/106565/artificial-intelligence-for-a-better-tomorrow/"
+                target="_blank">Artificial intelligence: Are we facing a future of robots running wild</a>
             </li>
             <li>
                 <i>ELSEVIER, 2016:</i> <a href=
@@ -316,12 +414,6 @@
                 target="_blank">Armorway Announces $2.5 Million in Seed Round
                 Funding for Pioneering Artificial and Prescriptive Intelligence
                 Enterprise Initiatives</a>
-            </li>
-            <li>
-                <i>National Defense Magazine, 2016:</i><a href=
-                "http://www.nationaldefensemagazine.org/archive/2016/June/Pages/CompanyUsingArtificialIntelligencetoImproveSecurity.aspx"
-                target="_blank">Company Using Artificial Intelligence to
-                Improve Security</a>
             </li>
             <li>
                 <i>Christian Science Monitor, 2016:</i><a href=
@@ -368,7 +460,8 @@
         <h5 class="w3-center">SHORT BIO FOR LECTURES</h5><br>
         <div id="short-bio" style=
         "text-align:justify; text-justify:inter-word;">
-            Milind Tambe is Helen N. and Emmett H. Jones Professor in
+            Milind Tambe is Co-Founder and Co-Director of the CAISS Center on AI for Social Solutions,
+            and Helen N. and Emmett H. Jones Professor in
             Engineering at the University of Southern California(USC). He is a
             fellow of AAAI and ACM, as well as recipient of the ACM/SIGART
             Autonomous Agents Research Award, Christopher Columbus Fellowship
@@ -473,15 +566,14 @@
     }
 
     // Change style of navbar on scroll
-    window.onscroll = function() {myFunction()};
-    function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+   function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
     } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+        x.className = "topnav";
     }
-    }
+}
     </script>
 </body>
-</html><!-- Page End Here -->
+</html>
